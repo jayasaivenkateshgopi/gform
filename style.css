@@ -1,0 +1,324 @@
+*{  box-sizing: border-box;  font-family: scandia-web;     transition: 0.15s;   }
+body{   margin: 0;     padding: 0; }
+.max-width{    width: 100%;   max-width: 1840px;  margin: auto;}
+.container{  display: flex; margin: auto; justify-content: center;}
+.container-inner{   width: 100%;   max-width: 1240px;  margin: auto;  }
+h1{  font-family: scandia-web;   font-weight: 400;     color: #fff;       font-size: 65px;     letter-spacing: 0.18em; line-height: 1.1;         }
+h2,h3{  color: #7270b1;     font-size: 28px;    font-weight: 600;   margin: 0;     line-height: 1.35;  font-family: scandia-web;     letter-spacing: 5px;     margin-bottom: 30px;}
+h3{  font-size: 18px;    letter-spacing: initial; line-height: 1.5;}
+.lr-more a, .rd-more a{ color: #fff; text-decoration: none;    font-family: roboto;     font-size: 18px;    font-weight: 500;   }
+.rd-more, .lr-more{  display: inline-block;     padding: 5px 20px; background-color: #3b1c45; }
+.rd-more {     background-color:#7270b1; }
+.lr-more:hover{    background-color: #2bad76;    }
+
+/* Header */
+header{  padding: 60px 30px 70px;  background-color: #fff;  position: relative; z-index: 9999;}
+header .container{  position: relative; z-index: 9999; justify-content: space-between;	align-items:end; }
+header ul{  list-style: none;  display: inline-block;  margin:0;	padding:0;	}
+header .container-inner{ max-width: 1840px;   }
+header ul li{	display: inline-block;	}
+header .mainnav li {	margin-right: calc(45px / 2);	}
+header .mainnav li:not(li:first-child){ margin-left: calc(45px / 2);  }
+header .mainnav li:hover a{     color: #7270b1;   }
+header .mainnav li:active a, header .mainnav li:visited a{  color: #7270b1;     }
+header ul a{  text-decoration: none;  color: #000;  font-weight: 600;  }
+header .lang a{     color: #fff;   font-weight: initial;}
+header img{  width: 260px;  }
+header .container-inner>*{    margin: 0 2.4%;     padding: 9px 0;     }
+header .left{	line-height:0;	padding: 10px 1.92%;}
+header .right{ margin-right: 50px; }
+header>.right{ margin-top: 20px;   margin-right: 60px; line-height: initial;  }
+header .right .lang{     text-align:center;  position:absolute;    top:-60px;    right: 0px;  line-height:60px;  background-color:#7270b1;  height:60px;     width:120px;   border-bottom-right-radius:100px;     border-bottom-left-radius:100px; }
+header .right .lang>li:first-child {      padding-right: 10px;     margin-right: 10px;    position: relative; }
+header .right .lang>li:first-child::after{   content: "";   background-color: #fff;  height: 12px; width: 1px; position: absolute; right: -3px;  top: 23px}
+#mobile-nav .mobile-menu{     position: fixed; top: 4.2rem;     left: 0;      width: 68em; overflow-y: scroll; }
+#mobile-nav .mobile-menu li{  height: 50px;  display: block;    background-color: #fff;  padding: 30px 30px; font-size: 18px; border-bottom: 1px solid rgba(0,0,0,0.1);    }
+#mobile-nav .mobile-menu a {  font-weight: 400;   font-size: 16px;    }
+#mobile-nav .mobile-menu a:hover{  color:  #7270b1;}
+
+/* Hero Banner */
+#hero-bnr{     padding: 280px 30px;     background-image: url(https://www.gform.eu/wp-content/uploads/2023/07/GFORM-Way-Home-BANNER.jpg); background-repeat: no-repeat;   background-position: center center;     background-size: cover;  }
+#hero-bnr .container{    flex-flow:column;   position: relative;      }
+#hero-bnr .container h1{    width: 90%;     margin: 0 1.92%;   margin-bottom: 25px;}
+#hero-bnr img{ width: 550px; position: absolute;  top: -13em;    right: 26.5em;   }
+#hero-bnr .container .position-top{   top: 17em;     right: 3em;}
+
+/* Key Figures */
+#key-fig{ padding: 135px 30px;  }
+#key-fig .counter-boxes{  list-style: none;  margin:0;	padding:0;	display: flex; justify-content: end;  margin-top: 100px;}
+#key-fig ul li{ width: 25%; text-align: center; padding: 20px;  }
+#key-fig li span:first-child{  color: #2bad76; display: block; font-family: scandia-web;  font-size: 30px;  font-weight: 600 ;}
+#key-fig li span:last-child{  display: block; margin-top: 10px;  font-size: 18px; }
+
+/* About Us */
+#aboutus{ padding: 75px 30px 60px;    background-color: #7270b1;}
+#aboutus .container-inner{  display: flex; position: relative;}
+#aboutus h2{   color: #fff;   }
+#aboutus p{ color:#fff; }
+#aboutus p span{  display: block; width: 420px; font-size: 18px;  margin-bottom: 25px;  }
+#aboutus .container-inner .right img[class*=img]{  position: absolute; top: -50%;  right: -1%}
+#aboutus .container-inner .right .img1{ height: 580px; }
+#aboutus .container-inner .right .img2{ height: 610px; }
+#aboutus .container-inner .right .img2{  top: -54% !important; right: -2% !important; }
+
+/* Services */
+#services{  padding:100px 30px; }
+#services p{  font-size: 36px;  line-height: 1.8;  color: #3d5b5c; letter-spacing: 0.2em;  margin-right: 6%;  margin-bottom:30px; width: 1100px; }
+
+/* ESG */
+#esg{ padding: 70px 30px 60px; background-color: #d7d8d9;}
+#esg .container-inner{  display: flex; position: relative;  justify-content: end;}
+#esg .left{  text-align: left; }
+#esg .container-inner .left img[class*=img]{  position: absolute; top: -30%;  left: -1.5%}
+#esg .container-inner .left .img2{  top: -36% !important; left: -3% !important; }
+#esg .right{   width: 36%}
+#esg .right p{ font-size: 18px;    line-height: 25px;  margin-bottom: 20px;     }
+#esg .right h2{ color:#3b1c45;}
+
+/* Latest News */
+#news{    padding:135px 30px 100px;  }
+.news-articles{ display:flex;   flex-wrap: wrap;  justify-content:space-between;   margin-top:50px;  padding-bottom:30px;   }
+.article {  width:32%;  height:350px;    position:relative;   }
+#news .news-articles img{margin-bottom:20px; width:100%;    }
+.rd-more{ padding:5px 20px;   font-family:roboto; margin:0; margin-top:25px;    position:absolute;  bottom:0; }
+#news .lr-more{     margin-top: 50px;   }
+
+/* The Team */
+#team{ display:block; padding: 0 30px 75px;  background-image: url('https://www.gform.eu/wp-content/uploads/2022/10/tmbg1-scaled.jpg');  background-position: center 100%; background-repeat: no-repeat; background-size: 100% 57%; }
+#team h2{  margin-bottom: 70px;   }
+#teams img{  height: auto; width: 100%;  }
+.chf-exe{  display: flex;  justify-content: center;    }
+.chf-exe>*{ text-align:center; margin: 0 80px;    }
+.exe-profile>*{  display: block; }
+#team .exe-name{  color:#fff; font-size: 24px;  font-weight: 600; margin-top: 25px; }
+#team .exe-role{  color: #fff;  margin: 10px  0 15px;  font-size: 18px;    letter-spacing: 2px;     }
+#team .in-icon::after{ content: '\f08c'; font-size:22px;   font-family: FontAwesome; color:#2bad76; }
+
+/* Connect With Us */
+#connect-withus{ display:block;  padding: 20px 30px 15px;  background-color: #2bad76;     }
+#connect-withus .container-inner{  display: flex;  flex-wrap: wrap;   align-items: center;  justify-content: center;    }
+#connect-withus .container-inner>*{  margin-right: 15px; font-family: fontawesome; font-size: 28px; text-decoration: none; color: #fff;     }
+#connect-withus .container-inner a{  font-size: 20px;  }
+#connect-withus h4{    font-weight: 600;text-transform: uppercase;    letter-spacing: 0.18em;  margin: 0; font-family: scandia-web !important;   } 
+
+/* Footer */
+footer{ padding: 60px 30px 40px;  background-color: #3b1c45;  }
+footer .container-inner{  max-width: 1840px;}
+footer .info{ margin: 0 2.4%; }
+footer img{ width: 195px; margin-bottom: 30px;  }
+footer a, footer span, footer p{ color: #fff;  text-decoration: none;  font-family: scandia-web; font-size: 14px;  line-height: 25px;  }
+
+/* Ciikies Script */
+          /* Cookie Script icon */
+          #cookieScript{ height: 3rem;  width: 3rem;  padding: 5px; background-color: #3b1c45;    border-radius: 50px;  transition: width .9s; position: fixed; bottom: 1rem;    left: 1rem;     display: flex; align-items: center;    }
+          #cookieScript svg{  height: l;  }
+          #cookieScript:hover{    width: 220px;  cursor: pointer;  }
+          #cookieScript:hover p{   margin: auto;     display: block; font-weight: 600; }
+          #cookieScript p{     color: #fff;        font-size: initial;    display: none; }
+
+          /* Cookies form */
+          #settings{     display: none; background-color: #3b1c45;   width: 300px;  padding: 15px 20px; max-height: 85%;    border-radius: 10px;     height: fit-content;     position: fixed; bottom: 1rem; left: 1rem; }
+          #settings h5{  font-size: 17px;    margin: 12px 0;     letter-spacing: 0.3px;   font-family: 'Open Sans', Arial, 'Trebuchet MS', 'Segoe UI', 'Helvetica', sans-serif;;     font-weight: 600; color: #fff;    }
+          #settings p{    font-size: 12px;    letter-spacing: 0.3px;   color: #fff;  }
+          #settings ul{  margin: 0;     padding: 0;    list-style: none;   margin-bottom: 20px;}
+          #settings li{  font-size: 11px; font-weight: 500; line-height: 30px;  display: flex; align-items: center;     }
+          #settings input[type="checkbox"]{  display: none;}
+          #settings .cookie-manage svg{ height: 15px;  }
+          #settings .cookie-buttons{    display: flex; justify-content: space-evenly;    padding: 10px 0;}
+          #settings .cookie-buttons button{  border-radius: 20px;     outline: 0;    border: 0;     background-color: transparent;     color: #fff;   margin: 0 5px 10px;     border: 1px solid #fff;  min-width: 103px;    line-height: 3;     font-size: 11px;    letter-spacing: 0.4px;   font-weight: 500;   }
+
+          /* Cookies form */
+          #settings .input-checkbox{    padding-left:35px; display:block;  margin-bottom:20px;   font-size:11px;   line-height:22px; font-weight:500;     position:relative;  color:#fff;     cursor:pointer; }
+          #settings input[type=checkbox]{    position:absolute;  top:0; left:0;    height:18px;opacity:0;     }
+          #settings .checkmark{    position:absolute; top:0;     left:0;   height:18px; width:18px;     background-color:transparent; border:2px solid #fff;    border-radius:2px;  }
+          #settings form label:first-child .checkmark{ border:3px solid rgba(255,255,255,0);    top:0;left:0; height:18px;    width:18px;   background-color:rgba(255,255,255,.26); }
+          #settings .input-checkbox input:checked~.checkmark:not(label:first-child .checkmark){ background-color:#fff;   }
+          #settings .input-checkbox .checkmark::after{ content:"\f00c";     position:absolute;  display:none; font-family: FontAwesome;     color: #000;}
+          #settings .input-checkbox input:checked~.checkmark::after{  display:block; }
+          #settings .checkmark::after{      left:-1px;     top:-5px; font-size: 15px;}
+
+          /* coockie */
+          #settings .cookie-buttons button{ border-radius:20px;  outline:0;  border:0; background-color:transparent;  color:#fff; margin:0 5px;  border:1px solid #fff;  min-width:103px;  line-height:3;  font-size:11px; letter-spacing:.4px; font-weight:500; padding:0 20px;  }
+          #settings .cookie-buttons button:first-child{ border: none;  background-color: #2bad76;  }
+
+          #settings .cookie-manage{ display: flex;  justify-content: center;  align-items: center;  margin-bottom: 10px;  }
+          #settings .cookie-manage svg{ height: 15px; fill: #fff;}
+          #settings .cookie-manage a{ text-decoration: none;  padding-left: 10px; color: #fff;  font-weight: 500; font-size: 12px;  }
+
+@media screen and (max-width: 1840px){
+     .max-width{ width: 98%;    }
+     #hero-bnr img{ width: 500px; position: absolute;  top: -13em;    right: 26.5em;   }
+     #hero-bnr .container .position-top{   top: 17em;     right: 3em; }
+}
+
+@media screen and (max-width: 1699px){
+     #hero-bnr img{ width: 450px; position: absolute;  top: -13em;    right: 26.5em;   }
+     #hero-bnr .container .position-top{   top: 17em;     right: 3em; }
+     #hero-bnr h1{  font-size: 50px;    }
+}
+
+@media screen and (max-width: 1440px){
+     header{  padding: 60px 0px 50px;  }
+     header img{    width: 240px;  }
+     header .mainnav li{ margin-right: calc(45px / 4); }
+     header .mainnav li:not(li:first-child){ margin-left: calc(45px / 4);  }
+     #hero-bnr{     padding: 200px 0px;     }
+     #hero-bnr h1{  font-size: 45px;    }
+     #hero-bnr img{ width: 400px; position: absolute;  top: -8em;    right: 26.5em;   }
+     #hero-bnr .container .position-top{   top: 12em;     right: 3em;}
+     #key-fig{ padding: 90px 30px; }
+     #aboutus .container-inner .right img[class*=img]{ top: -40%;     }
+     #aboutus .container-inner .right .img1{ height: 500px; }
+     #aboutus .container-inner .right .img2{ top: -47% !important;    }
+     #aboutus .container-inner .right .img2{ height: 530px; }
+     #services p{   width: auto;   font-size: 35px;    }
+     #esg .container-inner .left img[class*=img]{ top: -30%;     right: 2%;     }
+     #esg .container-inner .left .img1{ height: 530px; }
+     #esg .container-inner .left .img2{ top: -35% !important;    }
+     #esg .container-inner .left .img2{ height: 560px; }
+}
+
+@media screen and (max-width: 1350px){
+     #hero-bnr{     padding: 150px 0px;     }
+     #hero-bnr img{ width: 350px;  right: 22em;   }
+}
+
+@media screen and (max-width: 1240px){
+     #hero-bnr{     padding: 100px 0px;     }
+     #hero-bnr h1{  font-size: 36px;    }
+     #hero-bnr img{ width: 250px; position: absolute;  top: -4em;    right: 13em;   }
+     #hero-bnr .container .position-top{   top: 10em;     right: 1em;}
+     #aboutus .container-inner .right img[class*=img]{ top: -30%;     right: 2%;     }
+     #aboutus .container-inner .right .img1{ height: 450px; }
+     #aboutus .container-inner .right .img2{ top: -37% !important;   right: 1% !important;     }
+     #aboutus .container-inner .right .img2{ height: 480px; }
+     #services p{   font-size: 32px;    line-height: 1.6;   }
+     #esg .container-inner .left img[class*=img]{ top: -10%;     right: 2%;}
+     #esg .container-inner .left .img1{ height: 450px; }
+     #esg .container-inner .left .img2{ top: -15% !important;   right: 3% !important;     }
+     #esg .container-inner .left .img2{ height: 480px; }
+     
+}
+
+@media screen and (max-width: 1024px){
+     #hero-bnr img{ width: 250px; position: absolute;  top: -4em;    right: 13em;   }
+     #hero-bnr .container .position-top{   top: 10em;     right: 1em;}
+}
+
+@media screen and (min-width: 1100px){
+     header #mobile-nav {     display: none; }
+}
+
+@media screen and (max-width: 1099px){
+     header{   padding: 60px 30px 30px; }
+     header .mainnav{    display: none  ;}
+     header img{    width: 180px;   }
+     header .right .lang{     height: 60px;  width: 90px;   top: -75px;     }
+     header ul li{  font-size: 12px;    }
+     header #mobile-nav{ margin-top: 5px;    position: relative; }
+     header #mobile-nav::after{    content: "\f0c9";   font-family: FontAwesome;    font-size: 30px;     color: #2bad76;     }
+     header .right .lang>li:first-child {    margin-right: 5px;  position: relative; padding-right: 5px; }
+     header .container{  align-items: center;     }
+     header .right{ margin-right: 20px; margin-top: 0; }
+     header #mobile-nav .mobile-menu{     display: none; padding-top: 3rem;     }
+     header #mobile-nav:hover .mobile-menu{  display: block;     }
+     #hero-bnr img{ width: 250px; position: absolute;  top: -4em;    right: 13em;   }
+     #hero-bnr .container .position-top{   top: 10em;     right: 1em;}
+     #esg .container-inner .left img[class*=img]{ top: -3%;     right: 2%;}
+     #esg .container-inner .left .img1{ height: 450px; }
+     #esg .container-inner .left .img2{ top: -8% !important;   right: 3% !important;     }
+     #esg .container-inner .left .img2{ height: 480px; }
+}
+
+@media screen and (max-width: 880px){
+     header{   padding: 60px 2px 30px;    }
+     #hero-bnr{     padding: 60px 0px;       overflow: hidden;}
+     #hero-bnr h1{  font-size: 32px;    }
+     #hero-bnr .container h1{    position: relative;   z-index: 5;}
+     #hero-bnr img{ width: 200px; position: absolute;  top: -10em;    right: 0em;   z-index: 0;}
+     #hero-bnr .container .position-top{   top: 6em;     right: -9em; rotate: 45deg; }
+     #key-fig .counter-boxes{ flex-wrap: wrap;   }
+     #key-fig{ padding: 60px 30px; }
+     #key-fig .counter-boxes{ margin-top:    50px;     }
+     #key-fig ul li{     width: 100%;    }
+     #aboutus {     padding: 50px 30px 40px;}
+     #aboutus .max-width{     width: 100%;   }
+     #aboutus .container-inner{        position: static;  }
+     #aboutus p span{    width: 100%;   }
+     #aboutus .container-inner .right .img1{  position: static !important;  }
+     #aboutus .container-inner{    flex-wrap: wrap;    }
+     #aboutus .left, #aboutus .right{    padding-bottom: 25px;     }
+     #aboutus .right{    position: relative; margin-top: 25px; }
+     #aboutus .container-inner .right .img2{    position: absolute;     top: -20px !important; left: -20px}
+     #services{     padding: 30px; }
+     #services p{   font-size: 22px;    line-height: 1.6;   margin-right: 0;    }
+     #esg {     padding: 50px 30px 40px;}
+     #esg .max-width{     width: 100%;   }
+     #esg .container-inner{        position: static;  justify-content: flex-start;}
+     #esg .right p{ font-size: 16px;    line-height: 25px;  }
+     #esg p span{    width: 100%;   }
+     #esg .container-inner .left .img1{  position: static !important;  }
+     #esg .container-inner{    flex-wrap: wrap;    }
+     #esg .left, #aboutus .left{    padding-bottom: 25px;     }
+     #esg .left{    position: relative; margin-top: 25px; }
+     #esg .right{   width: 100%;   }
+     #esg .container-inner .left .img2{    position: absolute;     top: -20px !important; left: -20px}
+     #news{    padding: 60px 30px 50px; }
+     .news-articles{     margin-top: 0; }
+     .article {  width:50%;   padding: 0 15px;    margin: 30px -15px     }
+     .chf-exe>*{    margin: 5%;     }
+
+}
+
+@media screen and ( max-width: 880px ) and  ( min-width: 599px ) {
+     #aboutus .right{    margin-left: 50px;  }
+}
+
+@media screen and ( max-width: 599px ) and  ( min-width: 320px ) {
+     #aboutus .right{    margin: auto;   margin-top: 25px;  }
+     #esg .left{    margin: auto;   margin-top: 25px;  }
+}
+
+@media screen and (max-width: 599px){
+     h2{    font-size: 22px;    }
+     h3{  margin-bottom: 80px;     }
+     #services p{   font-size: 18px;    line-height: 1.6;   }
+     #aboutus .left, #aboutus .right{    padding-bottom: 15px;     }
+     #aboutus .container-inner .right .img1{ height: 280px; }
+     #aboutus .container-inner .right .img2{ height: 300px; }
+     #aboutus .container-inner .right .img2{    position: absolute;     top: -15px !important; left: -13px !important}
+     #esg .left, #esg .right{    padding-bottom: 15px;     }
+     #esg .container-inner .left .img1{ height: 280px; }
+     #esg .container-inner .left .img2{ height: 300px; }
+     #esg .container-inner .left .img2{    position: absolute;     top: -15px !important; left: -15px !important}
+     #news{padding: 30px 30px;     }
+     .article{ width: 100%;   height: auto; margin: 30px 0; padding: 0;    }
+     .lr-more a, .rd-more a{  font-size: 16px;    text-align: center; }
+     #news .lr-more{     margin: 0;     text-align: center;}
+     #team{    padding: 40px 30px; background-position: initial; background-size: cover;  }
+     #team h2{ color: #fff;   }
+     .chf-exe{ flex-wrap: wrap;    }
+     .chf-exe>*{    margin: 25px;}
+     #connect-withus h4{ width: 100%;   margin: 0;     text-align: center; padding-bottom:  15px;   }
+}
+
+@media screen and (max-width: 425px){
+     header img{    width: 150px;  }
+     #hero-bnr h1{  font-size: 30px;}
+     #key-fig ul li{     width: 100%;}
+     #key-fig{ padding: 30px 20px; }
+     #key-fig .counter-boxes{ margin-top: 25px;     }
+     #aboutus {     padding: 30px 20px  ;}
+     #connect-withus h4{ font-size: 18px     !important;    }
+}
+
+@media screen and (max-width: 375px){
+     #aboutus .left, #aboutus .right{    padding-bottom: 15px;     }
+     #aboutus .container-inner .right .img1{ height: 250px; }
+     #aboutus .container-inner .right .img2{ height: 270px; }
+     #aboutus .container-inner .right .img2{    position: absolute;     top: -15px !important; left: -13px}
+     #esg .left, #esg .right{    padding-bottom: 15px;     }
+     #esg .container-inner .left .img1{ height: 250px; }
+     #esg .container-inner .left .img2{ height: 270px; }
+     #esg .container-inner .left .img2{    position: absolute;     top: -15px !important; left: -13px}
+}
